@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Gotu|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gotu|Do+Hyeon|Raleway&display=swap");
 
 html {
-  font-family: "Gotu", sans-serif;
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Gotu", sans-serif; */
+  /* font-family: "Do Hyeon", sans-serif; */
   min-height: 100vh;
   width: 100vw;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 #pagehead {
@@ -14,7 +16,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: url("./codingscreen.png");
+  background-image: url("./images/codingscreen.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,10 +26,10 @@ html {
 #headingtext {
   position: absolute;
   color: aliceblue;
-  top: 40vh;
+  top: 20vh;
   width: 100%;
   /* z-index: 2; */
-  font-size: 60px;
+  font-size: 5vh;
 }
 
 .hamburgurline {
@@ -69,26 +71,107 @@ html {
   font-size: 50px;
 }
 
+#myphoto {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+}
+
 #projectsection {
   display: flex;
   flex-wrap: wrap;
 }
 
 .projects {
-  min-width: 49vw;
+  width: 40vw;
+  margin: auto;
   display: inline-block;
-  height: 50vh;
-  /* border: solid black; */
+  height: 60vh;
+  margin-top: 15px;
+  overflow: hidden;
+  box-shadow: grey 0px 0px 5px 3px;
+  /* border: solid #80808087 3px; */
+}
+
+.projects:hover {
+  box-shadow: grey 0px 0px 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    /* background-color: lightblue; */
+    width: 90vw;
+  }
 }
 
 .projectimage {
   display: block;
-  width: 70%;
-  height: 100%;
-  background-color: rgba(199, 186, 186, 0.25);
+  width: 100%;
+  margin: 0px auto;
+  height: 80%;
+  object-fit: cover;
+  object-position: center top;
+  box-sizing: border-box;
+  padding: 20px;
+  filter: invert(80%);
+  /* background-color: rgba(60, 59, 46, 0.72); */
+  /* background-color: rgba(9, 37, 140, 0.72); */
+}
+
+.projectimage:hover {
+  filter: none;
+  transition-duration: 0.25s;
 }
 
 .projectdescription {
+  width: 100%;
+  height: 10%;
+}
+
+p {
+  line-height: normal;
+  margin: 0px;
+}
+h3 {
+  line-height: 0px;
+}
+
+.education {
+  text-align: center;
+  /* margin-top: 5vh; */
+  border: #80808085 solid 1px;
+  border-radius: 5px;
+  padding: 10px 30px 30px 30px;
+  width: 70%;
+  margin: 5vh auto;
+}
+
+.educationline {
+  display: flex;
+  margin: auto;
+  list-style: none;
+  justify-content: space-around;
+  /* min-width: 70%; */
+  font-size: larger;
+}
+
+#contacthead {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.connectwithme {
+  list-style: none;
+  display: flex;
   width: 30%;
-  height: 100%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+footer {
+  height: 10vh;
+  position: sticky;
+  background-color: gray;
+  padding: 1vh;
+  display: flex;
 }
