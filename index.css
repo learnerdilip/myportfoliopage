@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Gotu|Raleway&display=swap");
+
+html {
+  font-family: "Gotu", sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#pagehead {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./codingscreen.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  /* z-index: 1; */
+}
+#headingtext {
+  position: absolute;
+  color: aliceblue;
+  top: 40vh;
+  width: 100%;
+  /* z-index: 2; */
+  font-size: 60px;
+}
+
+.hamburgurline {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+}
+
+#hamburgur {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+
+#menuoverlay {
+  height: 100vh;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+#overlayitems,
+#crossoverlay {
+  list-style: none;
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+#projectsection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects {
+  min-width: 49vw;
+  display: inline-block;
+  height: 50vh;
+  /* border: solid black; */
+}
+
+.projectimage {
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color: rgba(199, 186, 186, 0.25);
+}
+
+.projectdescription {
+  width: 30%;
+  height: 100%;
+}

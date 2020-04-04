@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <!-- <meta name="theme-color" content="#000000" /> -->
+    <title>devDilip_aboutMe</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <!-- overlay menu and hamburgur -->
+    <div id="menuoverlay">
+      <a id="crossoverlay" onclick="closeNav()">&times;</a>
+      <ul id="overlayitems">
+        <li>Projects</li>
+        <li>Technologies</li>
+        <li>Contact Me</li>
+      </ul>
+    </div>
+    <div id="hamburgur" onClick="openNav()" id="overlayopen">
+      <div class="hamburgurline"></div>
+      <div class="hamburgurline"></div>
+      <div class="hamburgurline"></div>
+    </div>
+    <!-- home page with name and image -->
+    <div>
+      <!-- page head is for the background image -->
+      <div id="pagehead"></div>
+      <h1 id="headingtext">
+        Dilip Singh <br />
+        Full-stack web Developer
+      </h1>
+      <h2></h2>
+    </div>
+    <section>
+      <h2>Some of my projects</h2>
+      <div id="projectsection">
+        <div class="projects">
+          <img class="projectimage" src="#" alt="project" />
+          <p class="projectdescription">about this project</p>
+        </div>
+        <div class="projects">
+          <img class="projectimage" src="#" alt="project" />
+          <p class="projectdescription">about this project</p>
+        </div>
+        <div class="projects">
+          <img class="projectimage" src="#" alt="project" />
+          <p class="projectdescription">about this project</p>
+        </div>
+        <div class="projects">
+          <img class="projectimage" src="#" alt="project" />
+          <p class="projectdescription">about this project</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Technologies I have worked with</h2>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>Javascript(ES6)</li>
+        <li>ReactJs</li>
+        <li>NodeJs</li>
+        <li>Express</li>
+        <li>Postgtres SQL</li>
+        <li>MongoDB</li>
+        <li>Sequelize ORM</li>
+        <li>Mongoose ORM</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <div>City: Rotterdam</div>
+      <div></div>
+    </section>
+
+    <footer>Made by Dilip for anyone interested in my profile</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
