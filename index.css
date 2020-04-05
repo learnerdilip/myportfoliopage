@@ -171,7 +171,18 @@ h3 {
 footer {
   height: 10vh;
   position: sticky;
-  background-color: gray;
-  padding: 1vh;
+  background-color: #9b8b9c;
+  padding: 3vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.resumeoverlay {
+  color: aliceblue;
 }

@@ -17,9 +17,13 @@
     <div id="menuoverlay">
       <a id="crossoverlay" onclick="closeNav()">&times;</a>
       <ul id="overlayitems">
-        <li>Projects</li>
+        <li><a class="resumeoverlay" href="#projectsection">Projects</a></li>
         <li>Technologies</li>
-        <li>Contact Me</li>
+        <li>
+          <a class="resumeoverlay" target="_blank" href="./devDilip_resume.pdf"
+            >Resume</a
+          >
+        </li>
       </ul>
     </div>
     <div id="hamburgur" onClick="openNav()" id="overlayopen">
@@ -56,10 +60,14 @@
               TECH: REACTJS, NodeJs, Bootstrap, Postgres, Express, Sequelize,
               HTML/CSS
             </p>
-            <a href="https://github.com/learnerdilip/portfolio_Invoice_manager"
+            <a
+              target="_blank"
+              href="https://github.com/learnerdilip/portfolio_Invoice_manager"
               ><i class="fa fa-github fa-2x">|</i></a
             >
-            <a href="https://dilip-invoice-client.herokuapp.com/"
+            <a
+              target="_blank"
+              href="https://dilip-invoice-client.herokuapp.com/"
               ><i class="fa fa-laptop fa-2x"></i
             ></a>
           </div>
@@ -76,10 +84,12 @@
               TECH: React-redux, Postgres, Express, Bootstrap, Sequelize,
               HTML/CSS
             </p>
-            <a href="https://github.com/learnerdilip/ticketswap_client"
+            <a
+              target="_blank"
+              href="https://github.com/learnerdilip/ticketswap_client"
               ><i class="fa fa-github fa-2x">|</i></a
             >
-            <a href="https://devdilip-ticketswap.netlify.com"
+            <a target="_blank" href="https://devdilip-ticketswap.netlify.com"
               ><i class="fa fa-laptop fa-2x"></i
             ></a>
           </div>
@@ -98,7 +108,7 @@
             <a href="https://github.com/learnerdilip/webapp-project"
               ><i class="fa fa-github fa-2x">|</i></a
             >
-            <a href="#"><i class="fa fa-laptop fa-2x"></i></a>
+            <a target="_blank" href="#"><i class="fa fa-laptop fa-2x"></i></a>
           </div>
         </div>
         <div class="projects">
@@ -112,7 +122,7 @@
             <p>
               TECH: React-redux,MongoDB, Express, Material UI, Mongoose, Multer
             </p>
-            <a href="https://github.com/learnerdilip/lab-book"
+            <a target="_blank" href="https://github.com/learnerdilip/lab-book"
               ><i class="fa fa-github fa-2x">|</i></a
             >
             <a href="#"><i class="fa fa-laptop fa-2x"></i></a>
@@ -146,24 +156,30 @@
       <h2>Contact Me</h2>
       <ul class="connectwithme">
         <li>
-          <a href="https://www.linkedin.com/in/dilip-singh-033a2a36/"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/dilip-singh-033a2a36/"
             ><i class="fa fa-linkedin fa-3x"></i
           ></a>
         </li>
         <li>
-          <a href="https://github.com/learnerdilip"
+          <a target="_blank" href="https://github.com/learnerdilip"
             ><i class="fa fa-github fa-3x"></i
           ></a>
         </li>
         <li>
-          <a href="./devDilip_resume.pdf">
+          <a target="_blank" href="./devDilip_resume.pdf">
             <i class="fa fa-download fa-3x"></i><br /><sub>Download CV</sub>
           </a>
         </li>
       </ul>
     </section>
 
-    <footer>Made by Dilip for anyone interested in my profile</footer>
+    <footer id="footer">
+      <h3>
+        &copy; Made by Dilip, who thanks you for visiting! <span>🙏🏻</span>
+      </h3>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
