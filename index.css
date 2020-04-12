@@ -24,6 +24,28 @@ html {
   filter: blur(3px);
   /* z-index: 1; */
 }
+
+#downarrow {
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  25% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
 #headingtext {
   position: absolute;
   color: aliceblue;
