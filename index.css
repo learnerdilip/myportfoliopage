@@ -5,9 +5,10 @@ html {
   /* font-family: "Gotu", sans-serif; */
   /* font-family: "Do Hyeon", sans-serif; */
   min-height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   text-align: center;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #pagehead {
