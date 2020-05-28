@@ -9,6 +9,8 @@ html {
   text-align: center;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.83);
+  color: aliceblue;
 }
 
 #pagehead {
@@ -136,10 +138,13 @@ h1#myproj {
   /* background: #4262a994; */
   color: white;
   /* border-bottom: solid #80808087 3px; */
+  border: solid #8080805e 1px;
+  border-radius: 10px;
 }
 
 .projects:hover {
-  box-shadow: grey 0px 0px 5px 3px;
+  box-shadow: #5f7dbf 0px 0px 13px 3px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -217,7 +222,7 @@ h3 {
 footer {
   height: 10vh;
   position: sticky;
-  background-color: #9b8b9c;
+  background-color: rgba(0, 0, 0, 0.83);
   padding: 3vh;
   display: flex;
   justify-content: center;
@@ -226,9 +231,19 @@ footer {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #eee;
 }
 
 .resumeoverlay {
   color: aliceblue;
+}
+
+#pdfs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#quote {
+  font-size: x-large;
 }
