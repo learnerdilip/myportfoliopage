@@ -247,3 +247,7 @@ a {
 #quote {
   font-size: x-large;
 }
+
+code {
+  font-size: large;
+}
